@@ -9,6 +9,10 @@ p{
     margin: 0;
 }
 
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -27,7 +31,7 @@ p{
 .home__header {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .header__logo{
@@ -36,8 +40,123 @@ p{
     font-weight: 700;
 }
 
+.header__nav {
+    padding-top: 15px;
+}
+
 .nav__item {
+    margin: 0 20px;
+
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+
+    position: relative;
+
+    transition: .2s linear;
+}
+
+.nav__item:hover {
+    color: #fce38a;
+}
+
+.nav__item.active {
+    color: #fce38a;
+}
+
+.nav__item::after {
+    content:"";
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+
+    opacity: 0;
+
+    position:absolute;
+    top: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    transition: .2s linear;
+}
+
+.nav__item:hover::after {
+    opacity: 1;
+}
+
+.nav__item.active::after {
+    opacity: 1;
+}
+
+.container__home{
+    width: 100%;
+    max-width: 900px;
+
+    position: relative;
+
+    margin: 0 auto;
+}
+
+.home__above {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: #fff ;
+
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.home__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 130px;
+    font-weight: 700;
+    text-align: center;
+    line-height: .9;
+
+    position: relative;
+}
+
+.home__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+.home__button{
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 2px solid #fff;
+
+    transform: translateX(-50%);
+
+    padding: 15px 25px;
+}
+
+.home__button:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
 }
