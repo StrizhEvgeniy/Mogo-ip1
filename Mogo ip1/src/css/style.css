@@ -221,7 +221,7 @@ h1,h2,h3,h4 {
 
 /* Standart Section */
 .standart__section {
-    margin: 90px 0;
+    padding: 90px 0;
 
     text-align: center;
 }
@@ -383,4 +383,130 @@ h1,h2,h3,h4 {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+}
+
+
+/* Service */
+.service__line {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.service__item {
+    width: 33%;
+
+    position: relative;
+}
+
+.service__icon {
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+    font-size: 35px;
+    color: #95e1d3;
+}
+
+.service__title {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    padding-left: 90px;
+    margin-bottom: 10px;
+}
+
+.service__text {
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+
+    padding-left: 90px;
+}
+
+hr {
+    margin-bottom: 60px;
+}
+
+
+/* Devices */
+.section__devices {
+    background: url(
+        ../img/devices/bg.jpg)
+        center no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+.ipad {
+    width: 480px;
+    height: 560px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-60%);
+}
+
+.iphone {
+    width: 255px;
+    height: 500px;
+
+    position: absolute;
+    bottom: -90px;
+    left: 55%;
+}
+
+
+/* Service__we__do */
+.service__we__do__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__accordion {
+    width: 45%;
+}
+
+.accordion__item {
+    position: relative;
+}
+
+.accordion__icon {
+    font-size: 32px;
+    color: #95e1d3;
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.accordion__title {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    padding: 25px 0;
+    padding-left: 60px;
+
+    border: 1px solid #e5e5e5;
+}
+
+.accordion__text {
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 300;
+
+    padding: 20px;
+
+    border: 1px solid #e5e5e5;
+
+    border-top: none;
 }
